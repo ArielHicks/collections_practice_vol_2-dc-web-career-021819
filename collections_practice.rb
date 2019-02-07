@@ -77,5 +77,6 @@ end
 
 def find_cool(array)
 
-    
+    array.find do |temperature|
+      temperature.cool?
 end
