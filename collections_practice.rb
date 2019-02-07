@@ -80,4 +80,5 @@ container = []
     array.each do |element|
       container << element if element[:temperature] == "cool"
   end
+  container
 end
