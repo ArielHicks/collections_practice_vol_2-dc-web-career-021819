@@ -84,6 +84,8 @@ container = []
 end
 
 def organize_schools(array)
-  
+
+  container = []
+
   end
 end
