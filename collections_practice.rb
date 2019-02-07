@@ -58,6 +58,6 @@ end
 
 def merge_data(arr1, arr2)
 
-  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
+  arr1[0].values.map.with_index {|v, i| arr2[i].merge(v)}
 
 end
