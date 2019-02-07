@@ -58,6 +58,6 @@ end
 
 def merge_data(structure_one, structure_two)
 
-  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
+  [0].values.map.with_index
 
 end
