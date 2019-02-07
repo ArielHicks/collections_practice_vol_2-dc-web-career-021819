@@ -56,7 +56,7 @@ def count_elements(array)
   end.uniq
 end
 
-def merge_data(array)
-  
+def merge_data(structure_one, structure_two)
+
 
 end
