@@ -40,13 +40,22 @@ end
 def count_elements(array)
 
   array.each do |original_hash|
+    #iterating over each part of the original hash
     original_hash[:count] = 0
+    #setting up a counter for that hash
     name = original_hash[:name]
-
+    #applying that to a variable called name
     array.each do |hash|
+    #iterating over the new hash
       if hash[:name] == name
+        #saying if that hash is equal to a specific name
         original_hash[:count] += 1
+        #add it to the original_hash array and increase the count by one
       end
     end
   end.uniq
+end
+
+def merge_data(array)
+
 end
