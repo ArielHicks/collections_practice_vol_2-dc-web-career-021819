@@ -77,10 +77,14 @@ end
 
 def find_cool(array)
 container = []
+#create an array with the variable name of container for all of the elements that match this criteria
     array.each do |element|
+      #iterate through each element using each
       container << element if element[:temperature] == "cool"
+      #then if the element meets the criteria of a key temperature and a value cool dump into container array
   end
   container
+  #return the container variable
 end
 
 def organize_schools(array)
