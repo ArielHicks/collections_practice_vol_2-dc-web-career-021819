@@ -59,12 +59,18 @@ end
 def merge_data(arr1, arr2)
 
   arr2[0].map do |name, prop_hash|
+    #we first iterate over the second array using .map to grab the name and it's value pair
     new_prop_hash = {}
+    #then we create a new hash
     arr1.each do |new_attr_hash|
+    #then we iterate over the second array using .each
       if new_attr_hash[:first_name] == name
+      #so if the new hash is equal to a specific name
         new_prop_hash = prop_hash.merge(new_attr_hash)
+      #then we'll merge the two data sets into the new_attr_hash
       end
     end
       new_prop_hash
+      #then we'll return the new_prop_hash
   end
 end
