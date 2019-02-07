@@ -56,8 +56,8 @@ def count_elements(array)
   end.uniq
 end
 
-def merge_data(structure_one, structure_two)
+def merge_data(v1,v2)
 
-  [0].values.map.with_index
+  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
 
 end
